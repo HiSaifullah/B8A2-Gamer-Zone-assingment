@@ -154,3 +154,25 @@ body{
     font-weight: 700;
     line-height: 45px;
 }
+/* gaming video section */
+.gaming-video-all{
+    display: flex;
+    gap: 10px;
+}
+.gaming-video{
+    width: 320px;
+    height: 390px;
+    border-radius: 16px;
+}
+.gaming-video-title{
+    color: #0B0223;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+.gaming-video-section-description{
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
