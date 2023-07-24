@@ -176,3 +176,92 @@ body{
     font-size: 18px;
     font-weight: 400;
 }
+..gaming-video-section{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+/* new section */
+.section-card{
+    display: flex;
+}
+.play-instantly-no{
+    text-align: center;
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.play-instantly{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.play-box{
+    padding-top: 100px;
+}
+.play-box p{
+    color: #534C64;
+    text-align: right;
+    padding-right: 240px;
+    padding-left: 120px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.gaming-card-one{
+    width: 95%;
+}
+.gaming-card-two{
+    position: relative;
+    bottom: 260px;
+    right: 150px;
+}
+/* career section */
+.career{
+    background: #FF42A5;
+    display: flex;
+}
+.career div img{
+    width: 700px;
+    height: 547px;
+}
+.career-skills{
+    display: flex;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+.career-skills .first-skill{
+    padding-right: 60px;
+}
+.career-skills-description{
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+.career-skills-description div h1{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.career-btn{
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF42A5;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    border: none;
+    background: #FFF;
+}
+/* catagory section */
+.catagory{
+    padding: 20px;
+}
