@@ -33,18 +33,22 @@ body{
     padding: 20px;
 }
 .follow-btn {
+    padding: 10px;
+    display: flex;
     border-radius: 8px;
     border: none;
     background-color: #e9e9ebf1;
     width: 262px;
     height: 56px;
+    align-items: center;
+    gap: 20px;
 }
-.follow-btn > span{
+/* .follow-btn > h1{
     color: #3C354F;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
-}
+} */
 .follow-btn > img{
     padding: 10px;
 }
@@ -81,6 +85,9 @@ body{
     font-size: 20px;
     font-weight: 500;
 }
+.one-click > i, .no-download > i{
+    color: #F948B2;
+}
 .no-download{
     padding-left: 80px;
     color: #534C64;
@@ -94,6 +101,7 @@ body{
     font-weight: 500;
 }
 .btn-sign-in{
+    margin-left: 80px;
     padding: 20px 40px;
     background: #FF42A5;
     color: #FFF;
@@ -177,12 +185,49 @@ body{
     font-size: 18px;
     font-weight: 400;
 }
-..gaming-video-section{
+.gaming-video-section{
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
 }
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #F948B2;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    visibility: hidden; /* Hide the overlay by default */
+    opacity: 0; /* Set opacity to 0 by default */
+    transition: visibility 0s, opacity 0.5s; /* Add a transition effect */
+}
+
+.image-container:hover .overlay {
+    visibility: visible; /* Show the overlay on hover */
+    opacity: 1; /* Set opacity to 1 on hover */
+}
+
+.overlay p {
+    margin: 0;
+}
+
+.gaming-video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.image-container {
+    position: relative;
+    display: inline-block; /* or any other appropriate display property */
+}
+.play-now{
+    color: #FFF;
+}
+
 /* new section */
 .section-card{
     display: flex;
@@ -245,7 +290,7 @@ body{
     padding-right: 10px;
     padding-bottom: 40px;
 }
-.career-skills-description div h1{
+.career-skills-description div > h1{
     color: #FFF;
     font-size: 48px;
     font-weight: 700;
@@ -264,7 +309,20 @@ body{
 }
 /* catagory section */
 .catagory{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
     padding: 20px;
+    
+}
+.catagory-image{
+    display: flex;
+    gap: 5px;
+}
+.catagory-image:hover{
+    border: 1px solid #FF42A5;
+    border-radius: 30px;
+
 }
 /* footer section */
 .footer{
@@ -323,3 +381,111 @@ body{
     padding-top: 30px;
     padding-bottom: 100px;
     }
+    /* extra section */
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #F948B2;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        visibility: hidden; /* Hide the overlay by default */
+        opacity: 0; /* Set opacity to 0 by default */
+        transition: visibility 0s, opacity 0.5s; /* Add a transition effect */
+    }
+    
+    .image-container:hover .overlay {
+        visibility: visible; /* Show the overlay on hover */
+        opacity: 1; /* Set opacity to 1 on hover */
+    }
+    
+    .overlay p {
+        margin: 0;
+    }
+    
+    .gaming-video {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .image-container {
+        position: relative;
+        display: inline-block; /* or any other appropriate display property */
+    }
+    .play-now{
+        color: #FFF;
+    }
+
+    /* mobile view */
+    @media  screen and (max-width: 576px) {
+        .navbar{
+            display: grid;
+            padding-left: 200px;
+        }
+        .gamer-logo{
+            padding: 0px;
+
+        }
+        .menu-bar > ul{
+            display: grid;
+            flex-wrap: wrap;
+        }
+        .play-goat{
+            display: grid;
+            
+        }
+        .gamer-group-section{
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-left: 100px;
+    }
+    .gamer-section-description, .section-last-title{
+        text-align: center;
+    }
+    .know-more{
+        padding: 20px;
+    }
+    .gaming-video-all{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-card{
+        flex-direction: column;
+    }
+    .gaming-card-one{
+        width: 80%;
+        position: relative;
+        left: 100px;
+    }
+    .gaming-card-two{
+        width: 50%;
+        position: relative;
+        left: 50px;
+        bottom: 200px;
+    }
+    .play-box > p{
+        text-align: center;
+        padding: 50px;
+    }
+    .career {
+        padding-left: 0px;
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    .catagory{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        
+    }
+    /* medium device */
+    @media screen and (min-width: 576px;) and (max-width: 960px){
+        .navbar{
+            display: grid;
+            flex-direction: column;
+        }
+    }
+}
