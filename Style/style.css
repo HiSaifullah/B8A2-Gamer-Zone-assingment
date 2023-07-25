@@ -420,15 +420,20 @@ body{
     }
 
     /* mobile view */
+    
     @media  screen and (max-width: 576px) {
         .navbar{
             display: grid;
-            padding-left: 200px;
+            justify-content: center;
         }
         .gamer-logo{
             padding: 0px;
 
         }
+        .btn-go , .btn-sign-in{
+            padding: 15px 30px;
+        }
+
         .menu-bar > ul{
             display: grid;
             flex-wrap: wrap;
@@ -437,16 +442,30 @@ body{
             display: grid;
             
         }
+        .one-click , .no-download , .supported-game{
+            padding: 0px;
+        }
         .gamer-group-section{
             flex-direction: column-reverse;
             align-items: center;
             padding-left: 100px;
     }
+    .group-18{
+        width: 90%;
+    }
     .gamer-section-description, .section-last-title{
         text-align: center;
     }
+    .gamer-group-section-img{
+        width: 100%;
+        height: 100%;
+    }
+    .gamer-section-title{
+        text-align: center;
+    }
     .know-more{
-        padding: 20px;
+        padding: 15px 30px;
+        margin-left: 100px;
     }
     .gaming-video-all{
         flex-direction: column;
@@ -458,7 +477,7 @@ body{
     .gaming-card-one{
         width: 80%;
         position: relative;
-        left: 100px;
+        left: 80px;
     }
     .gaming-card-two{
         width: 50%;
@@ -471,15 +490,26 @@ body{
         padding: 50px;
     }
     .career {
-        padding-left: 0px;
-        margin-left: 0px;
         flex-direction: column;
+    }
+    .career > div >.career-image{
+        width: 100%;
     }
     .catagory{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        
+    }
+    .footer-list{
+        padding-left: 0px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+   
+    }
+    .terms-policy{
+        padding-left: 0px;
+        flex-wrap: wrap;
+
     }
     /* medium device */
     @media screen and (min-width: 576px;) and (max-width: 960px){
